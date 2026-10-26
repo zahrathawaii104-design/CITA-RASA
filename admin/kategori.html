@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="light"><meta name="theme-color" content="#1B4332"><meta name="robots" content="noindex,nofollow">
+<title>Kategori - Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/admin.css"></head>
+<body data-page="kategori"><nav class="top"><b>Admin</b><a href="index.html">Dashboard</a><a href="menu.html">Menu</a><a href="kategori.html" class=active>Kategori</a><button id="logout">Keluar</button></nav><div class="wrap"><div id="msg" class="msg hide" role="status"></div><h1>Kelola Kategori</h1>
+<form class="panel" id="f"><h2 id="ftitle">Tambah kategori</h2><div class="f2">
+<div><label for="name">Nama</label><input id="name" required></div><div><label for="slug">Slug</label><input id="slug" required pattern="[a-z0-9-]+"></div>
+<div><label for="sort_order">Urutan</label><input type="number" id="sort_order" value="0"></div></div>
+<div class="row" style="margin-top:12px"><input type="checkbox" id="is_active" checked><label for="is_active">Aktif</label></div>
+<button class="btn" type="submit">Simpan kategori</button><button class="btn alt" id="reset" type="button">Batal</button></form>
+<p class="hint" style="margin-bottom:10px">Slug <b>nasi-box</b> dan <b>prasmanan</b> dipakai halaman website. Jangan diubah.</p>
+<div class="panel tw"><table><thead><tr><th>Nama</th><th>Slug</th><th>Urutan</th><th>Status</th><th>Aksi</th></tr></thead><tbody id="rows"></tbody></table></div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="../js/supabase.js"></script><script src="../js/admin.js"></script></body></html>

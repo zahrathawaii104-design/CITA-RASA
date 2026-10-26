@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="light"><meta name="theme-color" content="#1B4332">
+<title>Nasi Box - Cita Rasa Ayah</title><meta name="description" content="Nasi box dan katering prasmanan untuk acara keluarga, perayaan, dan kebutuhan Anda.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"></head>
+<body data-page="nasi"><div id="site-header"></div>
+<main>
+<section><div class="wrap"><h1>Paket Nasi Box</h1><p class="sub">Isi data pesanan, masukkan jumlah box, lalu kirim permintaan via WhatsApp.</p>
+<form class="panel" id="detail" onsubmit="return false"><h3>Detail pesanan</h3>
+<label for="nama">Nama pemesan</label><input id="nama" name="nama" autocomplete="name" required>
+<label for="tanggal">Tanggal acara</label><input type="date" id="tanggal" name="tanggal" required>
+<h3 class="grp">Alamat lengkap pengantaran</h3>
+<div class="cols"><div><label for="prov">Provinsi</label><input id="prov" name="prov" autocomplete="address-level1" required></div>
+<div><label for="kota">Kabupaten/Kota</label><input id="kota" name="kota" autocomplete="address-level2" required></div>
+<div><label for="kec">Kecamatan</label><input id="kec" name="kec" required></div>
+<div><label for="desa">Desa/Kelurahan</label><input id="desa" name="desa" required></div>
+<div><label for="rtrw">RT/RW</label><input id="rtrw" name="rtrw" placeholder="Contoh: 003/005" required></div>
+<div><label for="pos">Kode pos</label><input id="pos" name="pos" inputmode="numeric" maxlength="5" pattern="[0-9]{5}" autocomplete="postal-code" required></div></div>
+<label for="jalan">Nama jalan &amp; nomor rumah</label><input id="jalan" name="jalan" placeholder="Contoh: Jl. Melati No. 5" required>
+<div class="hint">Isi alamat selengkap mungkin agar tidak salah lokasi.</div></form>
+<div class="disc">Mengirim pesan WhatsApp bukan berarti tanggal otomatis terkunci. Konfirmasi tetap dilakukan oleh pemilik.</div><div id="katalog" class="grid g3" style="margin-top:18px"></div></div></section></main>
+<div id="site-footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="js/supabase.js"></script><script src="js/katalog.js"></script><script src="js/pemesanan.js"></script>
+</body></html>

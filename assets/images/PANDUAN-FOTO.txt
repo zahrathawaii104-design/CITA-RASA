@@ -1,0 +1,7 @@
+GANTI ILUSTRASI DENGAN FOTO ASLI
+Taruh file di folder ini dengan nama persis seperti di bawah. Foto otomatis menggantikan ilustrasi (kode tidak perlu diubah).
+
+hero.jpg      Foto hero Beranda (lebar ~1600px, <400 KB).
+galeri-1.jpg sampai galeri-6.jpg   Foto galeri (persegi, ~800x800px, <200 KB).
+logo.png      Logo bulat (persegi 200x200px). Otomatis dipotong lingkaran.
+Foto paket: unggah lewat halaman admin (Menu > Foto).

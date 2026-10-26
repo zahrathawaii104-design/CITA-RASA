@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="light"><meta name="theme-color" content="#1B4332">
+<title>Cita Rasa Ayah - Nasi Box & Prasmanan</title><meta name="description" content="Nasi box dan katering prasmanan untuk acara keluarga, perayaan, dan kebutuhan Anda.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"></head>
+<body data-page="home"><div id="site-header"></div>
+<main>
+<section class="hero"><div class="wrap"><h1>Hidangan Istimewa untuk Setiap Momen</h1>
+<p>Menyediakan nasi box dan katering prasmanan untuk acara keluarga, perayaan, dan berbagai kebutuhan Anda.</p>
+<div class="acts"><a class="btn wa" href="nasi-box.html">Lihat Nasi Box</a><a class="btn ghost" href="prasmanan.html">Lihat Prasmanan</a></div></div></section>
+<section id="layanan"><div class="wrap"><h2>Pilihan Layanan</h2><p class="sub">Pilih layanan sesuai kebutuhan acara Anda.</p>
+<div class="grid g2"><a class="card svc" href="nasi-box.html"><img class="svcimg" src="assets/images/menu-nasibox.svg" alt=""><h3>Nasi Box</h3><p>Praktis untuk rapat, pengajian, dan acara kantor. Harga per box.</p><span class="btn ghost">Lihat Paket</span></a>
+<a class="card svc" href="prasmanan.html"><img class="svcimg" src="assets/images/menu-prasmanan.svg" alt=""><h3>Prasmanan &amp; Katering Acara</h3><p>Hidangan lengkap untuk pernikahan, khitanan, dan syukuran. Harga per orang.</p><span class="btn ghost">Lihat Paket</span></a></div></div></section>
+<section><div class="wrap"><h2>Paket Unggulan</h2><p class="sub">Harga awal, harga final dikonfirmasi pemilik.</p><div id="unggulan" class="grid g3"></div></div></section>
+<section class="alt"><div class="wrap"><h2>Keunggulan Kami</h2><div class="grid g4" style="margin-top:16px">
+<div class="feat"><span class="ic">🌿</span><b>Bahan segar</b>Dimasak pada hari pengantaran.</div><div class="feat"><span class="ic">💰</span><b>Harga jelas</b>Isi paket dan harga awal tertera.</div>
+<div class="feat"><span class="ic">⏰</span><b>Tepat waktu</b>Pengantaran sesuai jadwal yang disepakati.</div><div class="feat"><span class="ic">💬</span><b>Konsultasi mudah</b>Tanya dan pesan langsung via WhatsApp.</div></div></div></section>
+<section class="alt"><div class="wrap"><h2>Galeri</h2><p class="sub">Hidangan dari dapur kami.</p><div id="galeri" class="gal"></div></div></section>
+<section><div class="wrap"><h2>Jenis Acara yang Kami Layani</h2><div class="chips" style="margin-top:14px"><span class="chip">💍 Pernikahan</span><span class="chip">🎉 Khitanan</span><span class="chip">🕌 Pengajian</span><span class="chip">🤲 Syukuran</span><span class="chip">💼 Rapat</span></div></div></section>
+<section class="cta"><h2>Siap merencanakan acara Anda?</h2><p>Pilih paket, isi kebutuhan, dan kirim permintaan lewat WhatsApp.</p><a class="btn wa" href="#layanan">Mulai Pesan</a></section></main>
+<!-- Netlify Forms: pendaftaran form untuk notifikasi email (disembunyikan, diisi lewat js/pemesanan.js) -->
+<form name="pesanan-katering" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+<input type="hidden" name="form-name" value="pesanan-katering">
+<input name="bot-field"><input name="subject"><input name="nama"><input name="jenis_layanan"><input name="paket"><input name="jumlah"><input name="tanggal"><input name="lokasi">
+<textarea name="detail_tambahan"></textarea><textarea name="pesan_whatsapp"></textarea></form>
+<div id="site-footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="js/supabase.js"></script><script src="js/katalog.js"></script><script src="js/pemesanan.js"></script>
+</body></html>
